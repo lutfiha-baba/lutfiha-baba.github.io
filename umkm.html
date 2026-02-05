@@ -2,56 +2,88 @@
 <html>
 <head>
   <title>Usaha Kita</title>
+<style> 
+ body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
 
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1f3c88, #2c82c9);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
 
-    section {
-      padding: 20px;
-    }
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
+/* BUTTON */
+.cta {
+  background-color: #f1c40f;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
 
-    button {
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
+/* SECTION */
+section {
+  padding: 20px;
+}
 
-    footer {
-      background: #ddd;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-    }
-  </style>
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* LIST */
+ul {
+  padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #eaeaea;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
   <header>
-    <h1>Usaha Kita</h1>
-    <p>Solusi terbaik untuk kebutuhan Anda</p>
-    <a href="https://wa.me/6285713064563?text=halo%20boleh%20juga%20nih%20web" target="_blank">
-  <button>Hubungi Kami</button>
+   <header class="hero">
+  <h1>Usaha Kita</h1>
+  <p>Solusi terbaik untuk kebutuhan Anda</p>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20boleh%20juga%20nih%20web" target="_blank">
+    <button class="cta">Hubungi Kami</button>
+  </a>
+</header>
+
 </a>
 
   </header>
@@ -68,15 +100,15 @@
     <div class="card">
       <h2>Layanan</h2>
       <ul>
-        <li>Jasa A</li>
-        <li>Jasa B</li>
-        <li>Jasa C</li>
+        <li>Jasa garuk felir</li>
+        <li>Jasa garuk fefec</li>
+        <li>Jasa garuk loob</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Alamat</h2>
-      <p>Jl. Contoh No. 123</p>
+      <p>Jl. Joy No. 420</p>
     </div>
   </section>
 
