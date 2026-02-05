@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profil Lutfi</title>
+
+  <style>
+    body {
+      background-color: #eef3f7;
+      font-family: Arial;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 320px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .sosial {
+  margin-top: 15px;
+}
+
+.sosial a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #2ecc71;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.dark .card {
+  background-color: #1e1e1e;
+}
+
+.dark p {
+  color: #ccc;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="foto.jpg">
+    <h1>Lutfi Hakim</h1>
+    <p>Pemula web developer, belajar pakai HP 📱</p>
+     <button onclick="sapa()">Sapa Aku
+     </button>
+<button onclick="darkMode()">Dark Mode</button>
+<div class="sosial">
+  <a href="https://instagram.com/Woyykep_" target="_blank">Instagram</a>
+  <a href="https://wa.me/6285713064563" target="_blank">WhatsApp</a>
+</div>
+
+ </div>
+
+  <script>
+  function sapa() {
+    alert("Halo! Terima kasih sudah mampir 😄");
+  }
+
+  function darkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+
+</body>
+</html>
