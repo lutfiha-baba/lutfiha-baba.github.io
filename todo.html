@@ -41,6 +41,18 @@
       margin-top: 5px;
       border-radius: 5px;
     }
+    li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
   </style>
 </head>
 
@@ -55,22 +67,36 @@
     <ul id="list"></ul>
   </div>
 
-  <script>
-    function kuyylah() {
-      var task = document.getElementById("task").value;
+<script>
+  function kuyylah() {
+    var task = document.getElementById("task").value;
 
-      if (task === "") {
-        alert("Tugas tidak boleh kosong!");
-        return;
-      }
-
-      var li = document.createElement("li");
-      li.innerHTML = task;
-
-      document.getElementById("list").appendChild(li);
-      document.getElementById("task").value = "";
+    if (task === "") {
+      alert("Tugas tidak boleh kosong!");
+      return;
     }
-  </script>
+
+    var li = document.createElement("li");
+    li.innerHTML = task;
+
+    li.onclick = function () {
+      this.style.textDecoration = "line-through";
+      this.style.color = "#999";
+    };
+
+    var hapus = document.createElement("button");
+    hapus.innerHTML = "❌";
+    hapus.style.marginLeft = "10px";
+    hapus.onclick = function () {
+      li.remove();
+    };
+
+    li.appendChild(hapus);
+    document.getElementById("list").appendChild(li);
+    document.getElementById("task").value = "";
+  }
+</script>
+
 
 </body>
 </html>
